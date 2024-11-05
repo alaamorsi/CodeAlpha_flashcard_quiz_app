@@ -1,3 +1,4 @@
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -32,7 +33,7 @@ class BuildTextFormField extends StatelessWidget {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(width: 2.0.sp, color: Colors.deepPurple),
+          borderSide: BorderSide(width: 2.0.sp, color: mainColor),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),

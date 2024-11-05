@@ -1,3 +1,4 @@
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
 import 'package:flashcard_quiz_app/core/constants/functions.dart';
 import 'package:flashcard_quiz_app/core/shared_widgets/default_app_bar.dart';
 import 'package:flashcard_quiz_app/features/models/question_model.dart';
@@ -25,7 +26,7 @@ class TestQuestionsScreen extends StatelessWidget {
             height: double.infinity,
             decoration: const BoxDecoration(
                 gradient: LinearGradient(
-                    colors: [Colors.deepPurple, Colors.white],
+                    colors: [mainColor, Colors.white],
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter)),
             child: Padding(

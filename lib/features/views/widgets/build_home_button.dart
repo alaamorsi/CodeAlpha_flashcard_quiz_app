@@ -1,3 +1,5 @@
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -15,8 +17,8 @@ class BuildHomeButton extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12.0), // Set your desired border radius
           ),
-          foregroundColor: Colors.deepPurple,
-          side: const BorderSide(color: Colors.deepPurple, width: 3),
+          foregroundColor: mainColor,
+          side: const BorderSide(color: mainColor, width: 3),
           fixedSize: Size(0.5.sw, 40.0.h), // Set text color
         ),
         child: Row(

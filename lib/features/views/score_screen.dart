@@ -1,3 +1,5 @@
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
 import 'package:flashcard_quiz_app/core/constants/functions.dart';
 import 'package:flashcard_quiz_app/core/shared_widgets/default_app_bar.dart';
 import 'package:flashcard_quiz_app/features/views/quizzes_collection_screen.dart';
@@ -17,7 +19,7 @@ class ScoreScreen extends StatelessWidget {
         height: double.infinity,
         decoration: const BoxDecoration(
             gradient: LinearGradient(
-                colors: [Colors.deepPurple, Colors.white],
+                colors: [mainColor, Colors.white],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter)),
         child: Column(
@@ -41,7 +43,7 @@ class ScoreScreen extends StatelessWidget {
                     ),
                     Text(
                       score,
-                      style: TextStyle(fontSize: 32.0.sp,fontWeight: FontWeight.bold,color: Colors.deepPurple),
+                      style: TextStyle(fontSize: 32.0.sp,fontWeight: FontWeight.bold,color: mainColor),
                     ),
                   ],
                 ),

@@ -1,3 +1,6 @@
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
 import 'package:flashcard_quiz_app/core/constants/functions.dart';
 import 'package:flashcard_quiz_app/core/shared_widgets/default_app_bar.dart';
 import 'package:flashcard_quiz_app/features/views/create_quiz_screen/add_question_screen.dart';
@@ -25,7 +28,7 @@ class _ChooseQuestionsNumberScreenState
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
-            gradient: LinearGradient(colors: [Colors.deepPurple,Colors.white],begin: Alignment.topCenter,end: Alignment.bottomCenter)
+            gradient: LinearGradient(colors: [mainColor,Colors.white],begin: Alignment.topCenter,end: Alignment.bottomCenter)
         ),
         child: Padding(
           padding: EdgeInsets.all(10.0.sp),
@@ -42,12 +45,12 @@ class _ChooseQuestionsNumberScreenState
               const Spacer(),
               Text(
                 'Choose number of questions :',
-                style: TextStyle(fontSize: 21.0.sp),
+                style: TextStyle(fontSize: 24.0.sp),
               ),
               Text(
-                'Note : Maximum number of questions is 10.',
+                'Note: Number of questions between 3 : 10.',
                 style: TextStyle(
-                  fontSize: 12.0.sp,
+                  fontSize: 14.0.sp,
                   color: Colors.black.withOpacity(0.5),
                 ),
               ),
@@ -58,7 +61,7 @@ class _ChooseQuestionsNumberScreenState
                 child: Container(
                   padding: EdgeInsets.all(5.0.sp),
                   decoration: BoxDecoration(
-                      border: Border.all(width: 2.0.h, color: Colors.deepPurple)),
+                      border: Border.all(width: 2.0.h, color: mainColor)),
                   child: DropdownButton<int>(
                     style: TextStyle(
                         fontSize: 16.0.sp,
@@ -68,14 +71,14 @@ class _ChooseQuestionsNumberScreenState
                     itemHeight: 50.0,
                     alignment: AlignmentDirectional.center,
                     underline: Container(),
-                    iconEnabledColor: Colors.deepPurple,
+                    iconEnabledColor: mainColor,
                     value: selectedNumber,
                     hint: const Text(
                       "Select a number",
                       style: TextStyle(color: Colors.black),
                     ),
                     items: List.generate(
-                      10,
+                      8,
                       (index) => DropdownMenuItem(
                         value: index + 3,
                         child: Center(child: Text((index + 3).toString())),

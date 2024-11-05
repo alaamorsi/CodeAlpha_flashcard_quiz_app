@@ -1,3 +1,5 @@
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
 import 'package:flashcard_quiz_app/core/constants/functions.dart';
 import 'package:flashcard_quiz_app/core/constants/variables.dart';
 import 'package:flashcard_quiz_app/features/models/question_model.dart';
@@ -181,7 +183,7 @@ class _BuildQuestionState extends State<BuildQuestion> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(12.0),
                           border:
-                              Border.all(width: 2.0, color: Colors.deepPurple),
+                              Border.all(width: 2.0, color: mainColor),
                         ),
                         child: Text(
                           widget.list[index].question,
@@ -209,7 +211,7 @@ class _BuildQuestionState extends State<BuildQuestion> {
                               color: getContainerColor(index2),
                               borderRadius: BorderRadius.circular(12.0),
                               border: Border.all(
-                                  width: 2.0, color: Colors.deepPurple),
+                                  width: 2.0, color: mainColor),
                             ),
                             child: Text(
                               currentAnswers[index2],

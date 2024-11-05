@@ -1,3 +1,5 @@
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
+import 'package:flashcard_quiz_app/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,8 +14,8 @@ class BuildNextButton extends StatelessWidget {
       child: OutlinedButton(
         onPressed: onPressed,
         style: OutlinedButton.styleFrom(
-          foregroundColor: Colors.deepPurple,
-          side: const BorderSide(color: Colors.deepPurple, width: 2),
+          foregroundColor: mainColor,
+          side: const BorderSide(color: mainColor, width: 2),
           fixedSize: Size(0.5.sw, 40.0.h), // Set text color
         ),
         child: Row(
