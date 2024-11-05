@@ -1,7 +1,5 @@
 import 'package:flashcard_quiz_app/core/constants/colors.dart';
-import 'package:flashcard_quiz_app/core/constants/colors.dart';
 import 'package:flashcard_quiz_app/core/constants/functions.dart';
-import 'package:flashcard_quiz_app/core/constants/variables.dart';
 import 'package:flashcard_quiz_app/features/models/question_model.dart';
 import 'package:flashcard_quiz_app/features/view_models/cubit.dart';
 import 'package:flashcard_quiz_app/features/views/score_screen.dart';

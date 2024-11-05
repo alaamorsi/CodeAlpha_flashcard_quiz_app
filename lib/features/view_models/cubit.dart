@@ -39,7 +39,6 @@ class HomeCubit extends Cubit<HomeStates> {
 
   Future<void> saveList() async {
     databaseList.add(qsList);
-    print(databaseList.length);
     emit(SaveDataLoadingState());
     try {
       // Flatten `databaseList` into a single list with metadata about which inner list each item belongs to
@@ -56,7 +55,6 @@ class HomeCubit extends Cubit<HomeStates> {
       await myBox.put('databaseList', flattenedList);
       emit(SaveDataSuccessState());
     } catch (error) {
-      print(error);
       emit(SaveDataErrorState());
     }
   }
@@ -81,10 +79,8 @@ class HomeCubit extends Cubit<HomeStates> {
         }
         databaseList[listIndex].add(question);
       }
-      print("Retrieved databaseList length: ${databaseList.length}");
       emit(GetDataSuccessState());
     } catch (error) {
-      print(error);
       emit(GetDataErrorState());
     }
   }
